@@ -1,0 +1,55 @@
+/*
+# Author:           Adriana Hall
+# Date:             April 17, 2022
+# Description:      This progam prompts for the users gas price and miles driven
+# Input:            car's mpg and gas price
+# Output:           Gas cost for 20 miles, 75 miles, and 500 miles
+# Sources:          None
+*/
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+
+int main() {
+  double carMpg;
+  double gasPrice;
+  double gasCost;
+  double gasTwenty;
+  double gasSeventyFive;
+  double gasFiveHund;
+  
+
+  cout << fixed << setprecision(2);
+  
+  cout << endl;
+  cout << "Please enter how many miles per gallon your car gets: ";
+  cin >> carMpg;
+  cout << endl;
+
+  cout << "Please enter your cost of gas: $";
+  cin >> gasPrice;
+  cout << endl;
+
+  
+  gasCost = gasPrice / carMpg;
+
+  gasTwenty = gasCost * 20;
+  
+  gasSeventyFive = gasCost * 75;
+
+  gasFiveHund = gasCost * 500;
+  
+
+    
+  cout << "If you drive 20 miles, your gas will cost: $" << gasTwenty << endl;
+  
+  cout << "If you drive 75 miles, your gas will cost: $" << gasSeventyFive << endl;
+
+  cout << "If you drive 500 miles, your gas will cost: $" << gasFiveHund << endl;
+
+
+
+} 
