@@ -1,0 +1,49 @@
+#**************************************************************************
+#Author:            Adriana Hall
+#Lab:               Lab 2
+#Date:              April 17, 2022
+#Description:       This program will find the area of a triangle
+#Input:             A triangle's height
+#Input:             A triangle's base
+#Output:            A triangle's area
+#Sources:
+#**************************************************************************
+
+# Sample Run:
+
+# Welcome to the calculator that will find the area of a triangle!
+
+# Please enter the triangle's height: 4
+
+# Please enter the triangle's base: 8
+
+# The area of a triangle is 16.0
+
+#**************************************************************************
+
+#Declare integer    triangleHeight
+#Declare integer    triangleBase
+#Declare integer   triangleArea
+triangleHeight = 0.0
+triangleBase = 0.0
+triangleArea = 0.0
+
+#Display        Welcome to the calculator that will find the area of a
+#               triangle!
+print("\nWelcome to the calculator that will find the area of a triangle!")
+#Display        Please enter the triangle's height:
+#Input          triangleHeight
+triangleHeight = float(input("\nPlease enter the triangle's height: "))
+
+#Display        Please enter the triangle's base:
+#Input          triangleBase
+triangleBase = float(input("\nPlease enter the triangle's base: "))
+
+#SET            triangleArea = (triangleHeight * triangleBase) / 2
+triangleArea = (triangleHeight * triangleBase) / 2
+
+#Display        The area of a triangle is" ,triangleArea,
+print("\nThe area of a triangle is" ,triangleArea,)
+
+#Display        Thank you for using the triangle area calculator!
+print("\nThank you for using the triangle area calculator!")
